@@ -1,4 +1,4 @@
-# Python
+#Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,32 +20,32 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual environments
+#Virtual environments
 venv/
 env/
 ENV/
 .venv/
 
-# IDE
+#IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+#OS
 .DS_Store
 Thumbs.db
 
-# Pygame / cx_Freeze build artifacts
+#Pygame / cx_Freeze build artifacts
 build/
 *.exe
 *.msi
 
-# Config files that shouldn't be tracked (if any local overrides)
-# gameconfig.txt
-# lessonconfig.txt
-# stateconfig.txt
+#Config files that shouldn't be tracked (if any local overrides)
+#gameconfig.txt
+#lessonconfig.txt
+#stateconfig.txt
 
-# Large binary files (already tracked, but good to note)
-# codekiddy.bin
+#Large binary files (already tracked, but good to note)
+#codekiddy.bin
