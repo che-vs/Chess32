@@ -24,14 +24,6 @@ Chess32 was designed to solve a real problem: existing chess platforms overwhelm
 
 ---
 
-## Screenshots
-
-| Main Menu | Bot Selection | Game Board |
-|-----------|---------------|------------|
-| *(Blurred chessboard background with logo and 4 buttons)* | *(8 bot portraits in 2×4 grid)* | *(Chess board with green legal move highlights)* |
-
----
-
 ## Installation
 
 ### Prerequisites
@@ -43,7 +35,7 @@ Chess32 was designed to solve a real problem: existing chess platforms overwhelm
 ### Dependencies
 
 ```bash
-pip install pygame python-chess pillow numpy
+pip install pygame python-chess Pillow NumPy
 ```
 
 Or install from `requirements.txt`:
@@ -186,7 +178,7 @@ These insights directly shaped Chess32's design philosophy: minimalism, gradual 
 | Navigation & Controls | 6 | 6 | 0 |
 | AI Performance | 24 | 23 | 1 |
 
-Full testing documentation covers functional testing, usability testing with stakeholders, AI benchmarking (including a game vs. Chess.com's Magnus Carlsen bot), and boundary/edge-case testing.
+Full testing documentation covers functional testing, usability testing with stakeholders, AI benchmarking (including a game vs. 2800 Elo Computer), and boundary/edge-case testing.
 
 ---
 
@@ -215,5 +207,3 @@ Full testing documentation covers functional testing, usability testing with sta
 This project was created for educational purposes as part of A-Level Computer Science coursework. Assets sourced from Chess.com, Lichess.org, and other credited sources are used under their respective licenses for educational use.
 
 ---
-
-*Built with ❤️ for beginners who just want to play chess.*
