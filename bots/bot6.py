@@ -396,7 +396,7 @@ def level6(board):
                 if alpha >= beta:
                     break
         else:
-            #playing as black: minimize evaluation (black pieces are negative)
+            #playing as black: minimise evaluation (black pieces are negative)
             best_value = float("inf")
             for move in ordered_moves:
                 board_copy = board.copy()
