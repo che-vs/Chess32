@@ -1,8 +1,8 @@
 import chess
-import random
 
 def level4(board):
     def evaluate(board):
+
         points = {
             chess.PAWN: 100, #A pawn is a 100 centipawns
             chess.KNIGHT: 300, #A Knight is about 3 pawns

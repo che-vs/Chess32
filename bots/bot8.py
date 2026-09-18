@@ -6,7 +6,7 @@ import chess.polyglot
 def level8(board):
     try:
         with chess.polyglot.open_reader("codekiddy.bin") as reader: #codekiddy.bin is an opening database in polygot format
-            entries = list(reader.find_all(board))                  #Downloaded from a github repository 
+            entries = list(reader.find_all(board))                  #Downloaded from a GitHub repository
             if entries:                                             #Author unknown
                 return random.choice(entries).move
     except:
@@ -194,7 +194,7 @@ def level8(board):
         -50, -30, -30, -30, -30, -30, -30, -50
     ]
 
-    center_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #center of the board
+    center_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #centre of the board
 
     starting_squares = { #squares the pieces start on
 
@@ -414,8 +414,8 @@ def level8(board):
                     
             return alpha
             
-        else:  #Minimizing player
-            #Stand pat for minimizing player
+        else:  #Minimising player
+            #Stand pat for minimising player
             if stand_pat <= alpha:
                 return alpha  #Alpha cutoff
             if stand_pat < beta:
