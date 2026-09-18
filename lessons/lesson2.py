@@ -17,12 +17,9 @@ def lesson2(screen):
 
     #colours
     WHITE = (255, 255, 255)
-    GRAY = (128, 128, 128)
-    BLACK = (0, 0, 0)
     GOLD = (255, 215, 0)
 
     #fonts size
-    fontlarge = pygame.font.Font(None, 48)  #names
     fontmedium = pygame.font.Font(None, 31)  #descriptions
     fontXL = pygame.font.Font(None, 64)  #title
     fontsmall = pygame.font.Font(None, 24)  #level labels
