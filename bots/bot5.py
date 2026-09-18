@@ -1,5 +1,4 @@
 import chess
-import random
 
 def level5(board):
     points = {
