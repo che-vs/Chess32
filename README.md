@@ -14,9 +14,9 @@ Chess32 was designed to solve a real problem: existing chess platforms overwhelm
 
 ### Key Features
 
-- **Clean 800×800 Interface** — Consistent layout across all screens with no distractions
-- **8 AI Difficulty Levels** — From random moves (Level 1) to iterative deepening with quiescence search (Level 8)
-- **8 Structured Lessons** — Step-by-step tutorials covering rules, tactics, and strategy
+- **Square UI** — Consistent layout across all screens with no distractions
+- **Eight AI Difficulty Levels** — From random moves (Level 1) to iterative deepening with quiescence search (Level 8)
+- **Eight Structured Lessons** — Step-by-step tutorials covering rules, tactics, and strategy
 - **Visual Feedback System** — Green highlights for legal moves, red for check, gold for last move
 - **Keyboard Navigation** — Full keyboard shortcuts (ESC, B, R, U, Arrow keys)
 - **Two-Player Mode** — Local multiplayer with full chess rule enforcement
