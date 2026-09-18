@@ -196,9 +196,6 @@ def level5(board):
                 material_value = points[piece.piece_type]
                 table_value = 0
 
-                #Positional value (adjust scaling as needed)
-                positional_value = 0
-
                 if piece.piece_type == chess.PAWN:
                     if piece.color == chess.WHITE:
                         table_value = pawn_mid[square]  #White pawn table
