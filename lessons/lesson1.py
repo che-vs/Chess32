@@ -1,5 +1,4 @@
 import pygame
-import chess
 import sys
 
 from PIL import Image, ImageFilter
