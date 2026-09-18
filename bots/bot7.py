@@ -4,7 +4,7 @@ import random
 def level7(board):
     try:
         with chess.polyglot.open_reader("codekiddy.bin") as reader: #codekiddy.bin is an opening database in polygot format
-            entries = list(reader.find_all(board))                  #Downloaded from a github repository 
+            entries = list(reader.find_all(board))                  #Downloaded from a GitHub repository
             if entries:                                             #Author unknown
                 return random.choice(entries).move
     except:
@@ -212,7 +212,7 @@ def level7(board):
         (chess.BLACK, True): king_black_end,
     }
 
-    center_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #center of the board
+    centre_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #centre of the board
 
     starting_squares = {
 
@@ -261,9 +261,9 @@ def level7(board):
                     value = material + (table_value / 3)
                     score += value if piece.color == chess.WHITE else -value
 
-###### Control of the Center ######
+###### Control of the Centre ######
         
-        for square in center_squares:
+        for square in centre_squares:
             white_attackers = len(board.attackers(chess.WHITE, square)) 
             black_attackers = len(board.attackers(chess.BLACK, square))
             score += 5 * (white_attackers - black_attackers)  
@@ -359,7 +359,7 @@ def level7(board):
         ordered_moves = sorted(board.legal_moves, key=move_score, reverse=True)
         
         if board.turn == chess.WHITE:
-            #playing as white: maximize evaluation (white pieces are positive)
+            #playing as white: maximise evaluation (white pieces are positive)
             best_value = -float("inf")#start with worst possible score
             for move in ordered_moves:
                 board.push(move)
@@ -375,7 +375,7 @@ def level7(board):
                 if alpha >= beta:
                     break
         else:
-            #playing as black: minimize evaluation (black pieces are negative)
+            #playing as black: minimise evaluation (black pieces are negative)
             best_value = float("inf")
             for move in ordered_moves:
                 board.push(move)
