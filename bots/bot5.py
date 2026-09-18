@@ -194,7 +194,8 @@ def level5(board):
             if piece:
                 #Material value
                 material_value = points[piece.piece_type]
-                
+                table_value = 0
+
                 #Positional value (adjust scaling as needed)
                 positional_value = 0
 
