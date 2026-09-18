@@ -1,5 +1,4 @@
 import chess
-import random
 
 def level3(board):
     def evaluate_board(board):
