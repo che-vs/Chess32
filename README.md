@@ -1,6 +1,6 @@
 # Chess32
 
-A beginner-friendly chess platform built for A-Level Computer Science NEA. Chess32 provides a clean, distraction-free environment for learning and playing chess, featuring 8 progressive AI difficulty levels and 8 structured lessons.
+A beginner-friendly chess platform built for A-Level Computer Science NEA. Chess32 provides a clean, distraction-free environment for learning and playing chess, featuring eight progressive AI difficulty levels and eight structured lessons.
 
 Python (3.8+)
 Pygame (2.0+)
