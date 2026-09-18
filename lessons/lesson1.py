@@ -136,5 +136,4 @@ if __name__ == "__main__":
     result = lesson1()
     if result == "quit":
         running = False
-        pygame.quit()
         sys.exit()
