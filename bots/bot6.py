@@ -181,7 +181,7 @@ def level6(board):
         -50, -30, -30, -30, -30, -30, -30, -50
     ]
 
-    center_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #center of the board
+    centre_squares = [chess.D4, chess.D5, chess.E4, chess.E5] #centre of the board
 
     starting_squares = { #squares the pieces start on
 
@@ -267,9 +267,9 @@ def level6(board):
                 else:
                     score -= material_value + (positional_value / 3)
 
-###### Control of the Center ######
+###### Control of the Centre ######
         
-        for square in center_squares:
+        for square in centre_squares:
             white_attackers = len(board.attackers(chess.WHITE, square)) 
             black_attackers = len(board.attackers(chess.BLACK, square))
             score += 5 * (white_attackers - black_attackers)
