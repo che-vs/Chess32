@@ -30,7 +30,7 @@ Chess32 was designed to solve a real problem: existing chess platforms overwhelm
 
 - **Python 3.8+**
 - **Windows** (primary target OS)
-- **4GB RAM** minimum
+- **Intel Core i3 4th Gen** minimum
 
 ### Dependencies
 
