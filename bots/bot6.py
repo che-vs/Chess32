@@ -380,7 +380,7 @@ def level6(board):
         ordered_moves = sorted(board.legal_moves, key=move_score, reverse=True)
         
         if board.turn == chess.WHITE:
-            #playing as white: maximize evaluation (white pieces are positive)
+            #playing as white: maximise evaluation (white pieces are positive)
             best_value = -float("inf")#start with worst possible score
             for move in ordered_moves:
                 board_copy = board.copy() #test on copy of board
