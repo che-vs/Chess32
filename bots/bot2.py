@@ -30,7 +30,7 @@ def level2(board):
         if maximizing:
             best_value = -float("inf") #start with worst possible score for white
             for move in board.legal_moves:
-                #make a move on a copy of the board so the player doesnt see 
+                #make a move on a copy of the board so the player doesn't see
                 board_copy = board.copy()
                 board_copy.push(move)
                 #recursively evaluate
