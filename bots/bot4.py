@@ -181,7 +181,7 @@ def level4(board):
             if piece:
                 #Material value
                 material_value = points[piece.piece_type]
-                
+
                 if piece.piece_type == chess.PAWN:
                     if piece.color == chess.WHITE:
                         table_value = pawn_mid[square]  #White pawn table
