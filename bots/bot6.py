@@ -103,8 +103,6 @@ def level6(board):
         -50, -40, -30, -20, -20, -30, -40, -50
     ]
     
-    score = 0
-
     #black piece-square tables
     pawn_black = [
         0, 0, 0, 0, 0, 0, 0, 0,
