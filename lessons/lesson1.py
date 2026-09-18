@@ -15,8 +15,6 @@ def lesson1(screen):
 
     #colours
     WHITE = (255, 255, 255)
-    GRAY = (128, 128, 128)
-    BLACK = (0, 0, 0)
     GOLD = (255, 215, 0)
 
     #fonts size
