@@ -11,7 +11,7 @@ def lesson1(screen):
 
     pygame.display.set_caption("Chess32 - Lesson 1")
 
-    board = pygame.image.load("images/board.png") 
+    board = pygame.image.load("images/board.png")
 
     #colours
     WHITE = (255, 255, 255)
@@ -39,7 +39,7 @@ def lesson1(screen):
     #Page 2 - Secret Page
 
     title1 = fontXL.render("DISCLAMER", True, GOLD)
-    
+
     line8 = fontmedium.render("  LEVEL 8 AI IS NOT TO BE MESSED WITH", True, WHITE)
     line9 = fontmedium.render("  PLAY AT YOUR OWN RISK", True, WHITE)
     line10 = fontmedium.render("  NO MAN HAS COME OUT ALIVE", True, WHITE)
@@ -49,23 +49,23 @@ def lesson1(screen):
         #Get the current screen as a string
         screenArray = pygame.surfarray.array3d(screen)
         screenArray = np.transpose(screenArray, (1, 0, 2))  #Fix orientation
-        
+
         #Convert to PIL Image
         pilImage = Image.fromarray(screenArray.astype("uint8"), "RGB")
-        
+
         #Apply blur
         blurred = pilImage.filter(ImageFilter.GaussianBlur(radius=5))
-        
+
         #Convert back to pygame surface
         blurredArray = np.array(blurred)
         blurredSurface = pygame.surfarray.make_surface(np.transpose(blurredArray, (1, 0, 2)))
-        
+
         return blurredSurface
 
     running = True
 
-    back_img = pygame.transform.scale(pygame.image.load("images/gameover/mainmenu.jpg"), (100, 100))   
-    
+    back_img = pygame.transform.scale(pygame.image.load("images/gameover/mainmenu.jpg"), (100, 100))
+
     back_rect = back_img.get_rect(center=(100, 60))
 
     while running:
@@ -90,14 +90,14 @@ def lesson1(screen):
                 if back_rect.collidepoint(event.pos):
                     return 3
 
-        if running:  
+        if running:
             #draw the board
             screen.blit(board, (0, 0))
             blurred_bg = blur()
             screen.blit(blurred_bg, (0, 0))
 
             screen.blit(back_img, back_rect)
-            
+
             #Page indicator
             page_text = fontsmall.render(f"Page {current_page}/1", True, WHITE)
             screen.blit(page_text, (700, 770))
@@ -112,7 +112,7 @@ def lesson1(screen):
                 screen.blit(line5, (100, 420))
                 screen.blit(line6, (100, 450))
                 screen.blit(line7, (100, 480))
-                
+
             elif current_page == 2:
                 screen.blit(title1, (400 - title1.get_width()//2, 150))
 
