@@ -453,7 +453,7 @@ def level8(board):
     
         if board_fen in transposition_table:
             entry = transposition_table[board_fen]
-            if entry["depth"] == depth: #if depth of the position evaluated in transposition table is equal or higher
+            if entry["depth"] >= depth: #if depth of the position evaluated in transposition table is equal or higher
                 return entry["value"] #return value 
         
         if board.is_checkmate():
