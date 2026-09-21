@@ -531,16 +531,14 @@ def level8(board):
         best_value = 0
         
         #Check for immediate checkmate first
-        legal_moves_list = sorted(board.legal_moves, key=move_score, reverse=True)
-        for move in legal_moves_list:
+        ordered_moves = sorted(board.legal_moves, key=move_score, reverse=True)
+        #Check for immediate checkmate first
+        for move in ordered_moves:
             board.push(move)
             if board.is_checkmate():
                 board.pop()
-                return move  #Immediately return the checkmate move
+                return move
             board.pop()
-
-        #Sort moves by score (highest first)
-        ordered_moves = sorted(legal_moves_list, key=move_score, reverse=True)
         
         #Iterative deepening - search at increasing depths
         for depth in range(1, max_depth + 1):
