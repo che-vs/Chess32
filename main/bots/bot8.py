@@ -524,7 +524,7 @@ def level8(board):
         time_lim = 15
         start_time = time.time()
         
-        if len(transposition_table) > 50000: #clears every 50000 items
+        if len(transposition_table) > 500000: #clears every 500000 items
             transposition_table.clear()
                     
         best_move_found = None
