@@ -9,7 +9,7 @@ def level8(board):
             entries = list(reader.find_all(board))                  #Downloaded from a GitHub repository
             if entries:                                             #Author unknown
                 return random.choice(entries).move
-    except:
+    except Exception:
         pass
     
     points = {
@@ -274,9 +274,9 @@ def level8(board):
 
                 #add to score
                 if piece.color == chess.WHITE:
-                    score += material_value + (positional_value / 3)
+                    score += material_value + (positional_value)
                 else:
-                    score -= material_value + (positional_value / 3)
+                    score -= material_value + (positional_value)
 
 ###### Control of the Center ######
         
