@@ -75,9 +75,9 @@ def level4(board):
 
                 #add to score
                 if piece.color == chess.WHITE:
-                    score += material_value + (positional_value / 3.0)
+                    score += material_value + (positional_value / 3)
                 else:
-                    score -= material_value + (positional_value / 3.0)
+                    score -= material_value + (positional_value / 3)
                     
         return score
 
