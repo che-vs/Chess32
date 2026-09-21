@@ -449,7 +449,7 @@ def level8(board):
         if time.time() - start_time > time_lim:
             return evaluate(board)
 
-        board_fen = board.fen()  #Use FEN as a key
+        board_fen = board.zobrist_hash()  #Use FEN as a key
     
         if board_fen in transposition_table:
             entry = transposition_table[board_fen]
