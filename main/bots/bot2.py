@@ -61,8 +61,7 @@ def level2(board):
             if board.turn == chess.WHITE:
                 if board.is_capture(move):
                     if board.is_en_passant(move):
-                        captured_value = points[
-                            chess.PAWN]
+                        captured_value = points[chess.PAWN]
                     else:
                         captured_value = points[board.piece_at(move.to_square).piece_type]
 
