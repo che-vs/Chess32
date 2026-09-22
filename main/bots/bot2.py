@@ -59,11 +59,17 @@ def level2(board):
             current_value = minimax(board_copy, depth - 1, False) #evaluate position with minimax
 
             if board.turn == chess.WHITE:
-                if board.is_capture(move): #points for piece captures
-                    current_value += points[(board.piece_at(move.to_square)).piece_type]
-            else:
-                if board.is_capture(move): #points for piece captures
-                    current_value -= points[(board.piece_at(move.to_square)).piece_type]
+                if board.is_capture(move):
+                    if board.is_en_passant(move):
+                        captured_value = points[
+                            chess.PAWN]
+                    else:
+                        captured_value = points[board.piece_at(move.to_square).piece_type]
+
+                    if board.turn == chess.WHITE:
+                        current_value += captured_value
+                    else:
+                        current_value -= captured_value
 
             #update if this move is better
             if current_value > best_value or (current_value == best_value and random.random() > 0.5):
