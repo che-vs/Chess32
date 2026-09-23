@@ -60,7 +60,7 @@ python setup.py build
 ## Project Structure
 
 ```
-Chess32/
+Main/
 ├── Chess32.py              # State manager — central controller
 ├── menu.py                 # Main menu (State 1)
 ├── twoplayer.py            # Two-player game (State 2)
@@ -69,7 +69,6 @@ Chess32/
 ├── baseplate.py            # Bot game engine (State 5)
 ├── credit.py               # Credits page (State 6)
 ├── baseplate2.py           # Lesson launcher (State 7)
-├── setup.py                # cx_Freeze build configuration
 │
 ├── bots/                   # AI engine package
 │   ├── bot1.py             # Level 1: Random moves
