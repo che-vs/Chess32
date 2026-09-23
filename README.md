@@ -109,13 +109,13 @@ Main/
 
 | Level | Algorithm | Description | Avg. Response |
 |-------|-----------|-------------|---------------|
-| **1** | Random | Chooses any legal move | <5ms |
-| **2** | Minimax | Game tree search, material-only evaluation | ~2s |
-| **3** | Alpha-Beta | Pruned minimax (depth 3) | ~2s |
-| **4** | PST | Adds piece-square tables for positional play | ~2s |
-| **5** | MVVLVA | Capture-prioritised move ordering | ~2s |
-| **6** | Development | King safety + piece development bonuses | ~2s |
-| **7** | Opening Book | Polyglot book + fallback to Level 6 | ~2s |
+| **1** | Random | Chooses any legal move | ~1s |
+| **2** | Minimax | Game tree search, material-only evaluation | 2-6s |
+| **3** | Alpha-Beta | Pruned minimax (depth 3) | 2-6s |
+| **4** | PST | Adds piece-square tables for positional play | 2-6s |
+| **5** | MVVLVA | Capture-prioritised move ordering | 2-6s |
+| **6** | Development | King safety + piece development bonuses | 2-6s |
+| **7** | Opening Book | Polyglot book + fallback to Level 6 | 2-6s |
 | **8** | Full Engine | Iterative deepening, aspiration windows, quiescence search, transposition tables | 0–15s |
 
 ---
