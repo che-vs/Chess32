@@ -110,7 +110,7 @@ Main/
 | Level | Algorithm | Description | Avg. Response |
 |-------|-----------|-------------|---------------|
 | **1** | Random | Chooses any legal move | <5ms |
-| **2** | Minimax | Game tree search, material-only eval | ~2s |
+| **2** | Minimax | Game tree search, material-only evaluation | ~2s |
 | **3** | Alpha-Beta | Pruned minimax (depth 3) | ~2s |
 | **4** | PST | Adds piece-square tables for positional play | ~2s |
 | **5** | MVVLVA | Capture-prioritised move ordering | ~2s |
