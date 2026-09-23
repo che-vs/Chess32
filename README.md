@@ -143,7 +143,7 @@ Main/
 - **Iterative Deepening** with time management
 - **Aspiration Windows** for search efficiency
 - **Quiescence Search** to mitigate horizon effect
-- **Transposition Tables** (FEN-based caching, 10,000 entry limit)
+- **Transposition Tables** (FEN-based caching, 500,000 entry limit)
 - **Polyglot Opening Book** integration
 
 ### Architecture
