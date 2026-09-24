@@ -7,8 +7,8 @@ build_exe_options = {
     "include_files": [
         "images",           #images folder
         "bots",             #bots folder
-        "codekiddy.bin",
-        "lessons"
+        "codekiddy.bin",    #opening book
+        "lessons"           #lessons folder
     ],
     "include_msvcr": True  #include MS runtime DLLs
 }
