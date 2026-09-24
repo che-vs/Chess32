@@ -69,6 +69,7 @@ Main/
 ├── baseplate.py            # Bot game engine (State 5)
 ├── credit.py               # Credits page (State 6)
 ├── baseplate2.py           # Lesson launcher (State 7)
+├── setup.py                # Project build file
 │
 ├── bots/                   # AI engine package
 │   ├── bot1.py             # Level 1: Random moves
